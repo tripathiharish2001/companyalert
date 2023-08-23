@@ -13,8 +13,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/api/tasks", tasksRoutes);
 app.use("/api/user", userRoutes);
+app.use("/api/tasks", tasksRoutes);
 
 app.get("/", (req, res) => {
   res.json({ msg: "Hey" });
