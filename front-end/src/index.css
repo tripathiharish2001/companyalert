@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #000;
   margin: 0;
@@ -7,21 +12,27 @@ body {
   height: 100vh;
 }
 
+a h1 {
+  font-size: 3.2rem;
+  width: auto;
+  margin: auto;
+}
+
 .container {
-  height: 70px;
+  height: 7rem;
   background-color: #20c997;
   max-width: 100%;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .wrapper {
-  height: 80px;
+  height: 8rem;
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
 a {
@@ -30,20 +41,20 @@ a {
 }
 
 .pages {
-  max-width: 1400px;
-  padding: 10px;
+  max-width: 140rem;
+  padding: 1rem;
   margin: 0 auto;
 }
 
 .home {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 40px;
+  gap: 4rem;
 }
 
 .tasks {
   height: 75vh;
-  padding: 0 20px 0 20px;
+  padding: 0 2rem 0 2rem;
   overflow-y: scroll;
 }
 
@@ -51,31 +62,31 @@ a {
   color: #eee;
   background: #20c9963c;
   border-radius: 4px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 2rem auto;
+  padding: 2rem;
   position: relative;
 }
 .task-details:hover {
   transition-duration: 0.4s;
-  box-shadow: 1px 1px 20px #69ebdb;
+  box-shadow: 1px 1px 2rem #69ebdb;
 }
 
 .task-details h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.2em;
+  margin: 0 0 1rem 0;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
 .task-details p {
   margin: 0;
-  font-size: 0.9em;
+  font-size: 1.4rem;
   text-transform: capitalize;
 }
 
 .task-details span {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 2rem;
+  right: 2rem;
   cursor: pointer;
   background: #63e6be;
   border: #151516 1px solid;
@@ -98,18 +109,20 @@ input {
 label {
   color: #aaa;
   text-transform: capitalize;
+  font-size: 1.6rem;
 }
 
 form h3 {
   color: #eee;
   text-transform: uppercase;
+  font-size: 2.4rem;
 }
 
 input {
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 90%;
   border-radius: 4px;
   box-sizing: border-box;
   background-color: #be4bdb2d;
@@ -126,18 +139,19 @@ form button {
   font-weight: 500;
   border: 0;
   color: #fff;
-  padding: 10px;
+  padding: 1rem;
   font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
 }
 div.error {
-  padding: 10px;
+  font-size: 1.6rem;
+  padding: 1rem;
   background: #ffefef;
   border: 1px solid #e7195a;
   color: #e7195a;
   border-radius: 4px;
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 
 input.error {
@@ -149,8 +163,15 @@ input.error {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
+.create h3 {
+  margin: 1.6rem 0;
+}
+.create input {
+  margin: 7px;
+}
+
 .footer {
-  font-size: 14px;
+  font-size: 1.4rem;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -158,11 +179,11 @@ input.error {
   background-color: #343a40;
   color: white;
   text-align: center;
-  z-index: 100;
+  /* z-index: 100; */
 }
 
 .icon {
-  font-size: 18px;
+  font-size: 1.8rem;
   padding-left: 7px;
   padding-right: 7px;
 }
@@ -173,12 +194,12 @@ input.error {
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #63e6be;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -187,26 +208,26 @@ input.error {
 
 form.signup,
 form.login {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 20px;
+  max-width: 40rem;
+  margin: 4rem auto;
+  padding: 2rem;
   border: 3px solid #63e6be;
-  box-shadow: 2px 4px 10px #be4bdb, 2px -2px 10px #be4bdb;
+  box-shadow: 2px 4px 1rem #be4bdb, 2px -2px 1rem #be4bdb;
   border-radius: 4px;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
-  padding: 20px;
-  font-size: 18px;
+  gap: 2rem;
+  padding: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   text-transform: capitalize;
 }
 
 .links {
   transition: background-color 0.5s, border-bottom 0.4s;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
 }
 
 .links:hover {
@@ -224,21 +245,88 @@ form.login {
   font-weight: 500;
   color: #eee;
   border: 2px solid #eee;
-  padding: 6px 10px;
+  padding: 0.6rem 1rem;
   border-radius: 4px;
   font-family: "Poppins";
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.6rem;
 }
 
 .userName {
-  padding-right: 40px;
-  font-size: 20px;
+  padding-right: 4rem;
+  font-size: 2rem;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
   font-weight: 600;
 }
 
+@media (max-width: 1020px) {
+  html {
+    /* 1 rem = 8px */
+    font-size: 55.25%;
+  }
+}
+
+@media (max-width: 853px) {
+  html {
+    /* 1 rem = 8px */
+    font-size: 43.75%;
+  }
+
+  .home {
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .tasks {
+    width: 60vw;
+  }
+
+  .create {
+    width: auto;
+    /* margin-bottom: 50px; */
+  }
+
+  .userName {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 586px) {
+  html {
+    /* 1 rem = 8px */
+    font-size: 37.5%;
+  }
+}
+
+@media (max-width: 586px) {
+  .home {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .tasks {
+    width: 90vw;
+    height: 40vh;
+    margin: auto;
+  }
+
+  .userName {
+    display: none;
+  }
+
+  .create {
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 90px;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+/* 
 @media (max-width: 768px) {
   body {
     font-size: 14px;
@@ -269,7 +357,7 @@ form.login {
 
   .login-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     gap: 0;
   }
 
@@ -331,4 +419,4 @@ form.login {
   .footer {
     font-size: 12px;
   }
-}
+} */
