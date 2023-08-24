@@ -222,6 +222,14 @@ form.login {
   border-radius: 4px;
 }
 
+form.signup {
+  padding: 3.6rem;
+}
+
+form input {
+  width: 100%;
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
