@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchTasks = async () => {
-      const response = await fetch("/api/tasks", {
+      const response = await fetch("https://list-un9j.onrender.com/api/tasks", {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },

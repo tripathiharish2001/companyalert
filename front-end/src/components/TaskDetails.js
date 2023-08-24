@@ -9,12 +9,15 @@ const TaskDetails = ({ task }) => {
       return;
     }
 
-    const response = await fetch("api/tasks/" + task._id, {
-      method: "DELETE",
-      headers: {
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      "https://list-un9j.onrender.com/api/tasks/" + task._id,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
     const json = await response.json();
     if (response.ok) {
       console.log(json);

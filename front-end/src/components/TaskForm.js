@@ -23,7 +23,7 @@ const TaskForm = () => {
     }
 
     const task = { title, deadlineTime, deadlineDate, note };
-    const response = await fetch("/api/tasks", {
+    const response = await fetch("https://list-un9j.onrender.com/api/tasks", {
       method: "POST",
       body: JSON.stringify(task),
       headers: {
