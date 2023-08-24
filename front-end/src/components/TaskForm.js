@@ -54,7 +54,7 @@ const TaskForm = () => {
   return (
     <div className="form-field">
       <form action="" className="create" onSubmit={handleSubmit}>
-        <h3>Record Company Deadline</h3>
+        <h3>Record Company's Deadline</h3>
 
         {/* company name */}
         <label htmlFor="">Company Name :</label>
@@ -92,7 +92,7 @@ const TaskForm = () => {
         />
 
         {/* company name */}
-        <label htmlFor="">Note :</label>
+        <label htmlFor="">Additional Notes :</label>
         <input
           type="text"
           onChange={(e) => {
