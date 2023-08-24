@@ -49,7 +49,7 @@ a {
 .home {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .tasks {
@@ -140,6 +140,7 @@ input:focus {
 }
 
 form button {
+  margin-top: 2rem;
   background: #be4bdb;
   font-weight: 500;
   border: 0;
@@ -168,11 +169,16 @@ input.error {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
+.create {
+  margin: auto;
+}
+
 .create h3 {
   font-size: 2rem;
   margin: 1.6rem 0;
 }
 .create input {
+  width: 90%;
   margin: 7px;
 }
 
@@ -222,8 +228,9 @@ form.login {
   border-radius: 4px;
 }
 
-form.signup {
-  padding: 3.6rem;
+form.signup,
+form.login {
+  padding: 2.4rem;
 }
 
 form input {
