@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="nav-links">
         {user && (
           <div>
-            <span>{user.email}</span>
+            <span className="userName">👤{user.email.split("@")[0]}</span>
             <button onClick={handleClick} className="btn-logout">
               Log out
             </button>
