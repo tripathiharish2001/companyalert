@@ -7,12 +7,14 @@ import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Navbar from "./components/Navbar";
+import Loading from "./pages/Loading";
 
 function App() {
   // const [darkMode, setDarkMode] = useState(false);
   const { user } = useAuthContext();
   return (
     <div className="App">
+      <Loading />
       <BrowserRouter>
         {/* <TaskContextProvider> */}
         <Navbar />
